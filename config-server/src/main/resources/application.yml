@@ -1,0 +1,13 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://LuisRodrigoPumaHerencia@bitbucket.org/tareaspringcloud/tareaspringcloudserver.git
+          default-label: main
+  profiles:
+    active: git
